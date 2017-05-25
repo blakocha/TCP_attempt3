@@ -22,6 +22,14 @@ namespace TCP_attempt3
         {
             string host = Adres.Test;
             int port = System.Convert.ToInt32(Port_Number.Value);
+
+            try { TcpClient klient = new TcpClient(host, port);
+                info_o_polaczeniu.Items.Add("Nawiązano połączenie z " + host + " na porcie " + port);
+                klient.Close; 
+            }
+            catch { info_o_polaczeniu.Items.Add("Błąd: " + "Nie udało się nawiązać połączenia!");
+                MessageBox.Show(Exception.ToString(), "Błąd");
+            }
         }
     }
 }
