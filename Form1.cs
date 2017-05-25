@@ -20,7 +20,8 @@ namespace TCP_attempt3
 
         private void Polacz_Click(object sender, EventArgs e)
         {
-
+            string host = Adres.Test;
+            int port = System.Convert.ToInt32(Port.Value);
         }
     }
 }
