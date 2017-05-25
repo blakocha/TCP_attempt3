@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.Adres = new System.Windows.Forms.TextBox();
-            this.Port = new System.Windows.Forms.NumericUpDown();
+            this.PortNumber = new System.Windows.Forms.NumericUpDown();
             this.info_o_polaczeniu = new System.Windows.Forms.ListBox();
             this.Polacz = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.Port)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PortNumber)).BeginInit();
             this.SuspendLayout();
             // 
             // Adres
@@ -43,17 +43,17 @@
             this.Adres.TabIndex = 0;
             this.Adres.Text = "Adres";
             // 
-            // Port
+            // PortNumber
             // 
-            this.Port.Location = new System.Drawing.Point(380, 28);
-            this.Port.Maximum = new decimal(new int[] {
+            this.PortNumber.Location = new System.Drawing.Point(380, 28);
+            this.PortNumber.Maximum = new decimal(new int[] {
             65535,
             0,
             0,
             0});
-            this.Port.Name = "Port";
-            this.Port.Size = new System.Drawing.Size(313, 20);
-            this.Port.TabIndex = 1;
+            this.PortNumber.Name = "PortNumber";
+            this.PortNumber.Size = new System.Drawing.Size(313, 20);
+            this.PortNumber.TabIndex = 1;
             // 
             // info_o_polaczeniu
             // 
@@ -80,11 +80,11 @@
             this.ClientSize = new System.Drawing.Size(726, 459);
             this.Controls.Add(this.Polacz);
             this.Controls.Add(this.info_o_polaczeniu);
-            this.Controls.Add(this.Port);
+            this.Controls.Add(this.PortNumber);
             this.Controls.Add(this.Adres);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.Port)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PortNumber)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -93,7 +93,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox Adres;
-        private System.Windows.Forms.NumericUpDown Port;
+        private System.Windows.Forms.NumericUpDown PortNumber;
         private System.Windows.Forms.ListBox info_o_polaczeniu;
         private System.Windows.Forms.Button Polacz;
     }
