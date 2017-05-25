@@ -20,15 +20,16 @@ namespace TCP_attempt3
 
         private void Polacz_Click(object sender, EventArgs e)
         {
-            string host = Adres.Test;
-            int port = System.Convert.ToInt32(Port_Number.Value);
+            string host = Adres.Text;
+            int port = System.Convert.ToInt32(PortNumber.Value);
 
             try { TcpClient klient = new TcpClient(host, port);
                 info_o_polaczeniu.Items.Add("Nawiązano połączenie z " + host + " na porcie " + port);
-                klient.Close; 
+                klient.Close(); 
             }
-            catch { info_o_polaczeniu.Items.Add("Błąd: " + "Nie udało się nawiązać połączenia!");
-                MessageBox.Show(Exception.ToString(), "Błąd");
+            catch (Exception ex)
+            { info_o_polaczeniu.Items.Add("Błąd: " + "Nie udało się nawiązać połączenia!");
+                MessageBox.Show(ex.ToString(), "Błąd");
             }
         }
     }
