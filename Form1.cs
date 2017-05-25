@@ -16,5 +16,10 @@ namespace TCP_attempt3
         {
             InitializeComponent();
         }
+
+        private void Polacz_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
